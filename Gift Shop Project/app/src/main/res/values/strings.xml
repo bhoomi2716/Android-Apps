@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Gift Shop</string>
+    <string name="welcome_txt">WELCOME</string>
+    <string name="forgotepass_txt"><u>Forgot your password?</u></string>
+    <string name="or_continue_with">Or Continue With</string>
+    <string name="dont_have_accout_register">Don\'t have an account yet? <b>Register</b></string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create An Account</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Select Gender</string>
+    <string name="email">Email</string>
+    <string name="chkbox_accept_terms">By continuing you accept our <u>Privacy Policy</u> and <u>Terms of Use</u></string>
+    <string name="or_register_with">Or Register With</string>
+    <string name="register">Register</string>
+    <string name="already_account_login">Already have an account? <b>Login</b></string>
+    <string name="wishlist">Wishlist</string>
+    <string name="addtocart">Add To Cart</string>
+    <string name="payment">Make Payment</string>
+    <string name="itemname">Item Name</string>
+    <string name="itemprice">Item Price</string>
+    <string name="itemdesc">Item Description</string>
+    <string name="logout">LogOut</string>
+    <string name="removefromcart">Remove From Cartlist</string>
+    <string name="removefromwishlist">Remove From Wishlist</string>
+    <string name="rupee_symbol">₹ </string>
+    <string name="btnAddCategory"> Submit Category </string>
+    <string name="finalpayment">Proceed To Payment</string>
+    <string name="categoryName">Category Item Name</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/wishlist"
+        android:id="@+id/wishlist_toolbar_dashboard"
+        android:icon="@drawable/wishlist_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/addtocart"
+        android:id="@+id/addtocart_toolbar_dashboard"
+        android:icon="@drawable/addtocart_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/logout"
+        android:id="@+id/logout_toolbar_dashboard"
+        android:icon="@drawable/logout_icon"
+        app:showAsAction="ifRoom"/>
+</menu>

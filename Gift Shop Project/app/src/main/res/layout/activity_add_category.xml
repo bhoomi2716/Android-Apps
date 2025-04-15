@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffecf6"
+    tools:context=".Admin.Activity.AddCategoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A8757F"/>
+
+    <ImageView
+        android:id="@+id/imageViewAddCategory"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/category_item_img" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtItemNameAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/categoryName"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:text="@string/btnAddCategory"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
