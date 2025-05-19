@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_sleep_bg"
+    tools:context=".activity.PlayOptionSleepActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytRelativeTopPLayOption">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+                android:id="@+id/ivToolbarPlayOption"
+                android:background="@drawable/night_island_toolbar_img"
+                android:contentDescription="@string/song_img"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_35sdp">
+
+                <ImageView
+                    android:contentDescription="@string/back_button"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:src="@drawable/btn_back_course_details"
+                    android:id="@+id/ivBackToolbarPlayOption"/>
+
+                <ImageView
+                    android:contentDescription="@string/like_button"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:src="@drawable/btn_like_toolbar"
+                    android:layout_toStartOf="@+id/ivDownloadToolbarPlayOption"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:id="@+id/ivLikeToolbarPlayOption"/>
+
+                <ImageView
+                    android:contentDescription="@string/download_button"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:src="@drawable/btn_download"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/ivDownloadToolbarPlayOption"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lytLinearPlayBtn"
+        android:layout_below="@+id/lytRelativeTopPLayOption">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_island"
+            android:textSize="@dimen/_25ssp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textColor="@color/recycler_txt_color"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:id="@+id/tvSongTitlePlayOption"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min_sleep_music"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:layout_below="@+id/tvSongTitlePlayOption"
+            android:textColor="@color/rv_txt_color"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:id="@+id/tvMinMusicPlayOption"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mind_into_restful_with_ambient_tones"
+            android:textSize="@dimen/_11ssp"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:textColor="@color/sub_heading_primary"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_below="@+id/tvMinMusicPlayOption"
+            android:id="@+id/tvEasyMindRestPlayOption"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:id="@+id/lytLinearPlayOptions"
+                android:layout_below="@+id/tvEasyMindRestPlayOption"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:contentDescription="@string/like_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_like_play_option"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivLikePlayOption"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favorites"
+                        android:layout_toEndOf="@+id/ivLikePlayOption"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sub_heading_primary"
+                        android:id="@+id/tvFavouriteNumber"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:contentDescription="@string/head_phone_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_headphn_play_option"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivHeadPhnPlayOption"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/listening_number"
+                        android:layout_toEndOf="@+id/ivHeadPhnPlayOption"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sub_heading_primary"
+                        android:id="@+id/tvHeadPhnNumber"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/vertical_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_play_option"
+                android:layout_below="@+id/lytLinearPlayOptions"
+                android:id="@+id/linePlayOptions"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/tvRelated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linePlayOptions"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:text="@string/related"
+                android:textColor="@color/recycler_txt_color"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerViewPlayOptions"
+                android:scrollbars="none"
+                android:layout_below="@+id/tvRelated"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:id="@+id/lytLinearPlayBtn"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPlay_PlayOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/btn_bg"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/play"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:textColor="@color/btn_text"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+</RelativeLayout>

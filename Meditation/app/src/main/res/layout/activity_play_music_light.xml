@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bg_light"
+    tools:context=".activity.PlayMusicLightActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="pin"
+        android:id="@+id/lytRelativeMusicLight"
+        android:layout_marginHorizontal="@dimen/_15sdp">
+
+        <ImageView
+            android:contentDescription="@string/back_button"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/btn_cancel_music_light"
+            android:id="@+id/ivCancelMusicLight"/>
+
+        <ImageView
+            android:contentDescription="@string/like_button"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/btn_like_music_light"
+            android:layout_toStartOf="@+id/ivDownloadMusicLight"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:id="@+id/ivLikeMusicLight"/>
+
+        <ImageView
+            android:contentDescription="@string/download_button"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/btn_download_music_light"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivDownloadMusicLight"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/lytRelativeMusicLight">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/focus_attention"
+            android:textSize="@dimen/_25ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:textColor="@color/heading_colour_primary"
+            android:id="@+id/tvTitleMusicLight"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meditate_music"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/nav_txt_color"
+            android:gravity="center"
+            android:id="@+id/tvTopicNameMusicLight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <ImageView
+                android:contentDescription="@string/previous_music_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/previous_music_light"
+                android:id="@+id/ivPreviousMusicLight"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:contentDescription="@string/second_backward_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backward_second_light"
+                android:id="@+id/ivBackwardSecondLight"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:contentDescription="@string/play_pause_button"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:src="@drawable/btn_pause_light"
+                android:id="@+id/ivPlayPauseLight"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:contentDescription="@string/second_forward_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/forward_second_light"
+                android:id="@+id/ivForwardSecondLight"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:contentDescription="@string/next_music_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/next_music_light"
+                android:id="@+id/ivNextMusicLight"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:layout_marginHorizontal="@dimen/_22sdp"
+            android:progressTint="@color/heading_colour_primary"
+            android:thumb="@drawable/seekbar_thumb_light"
+            android:id="@+id/seekbarMusicLight"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute"
+                android:textColor="@color/heading_colour_primary"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tvStartTimeMusicLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute"
+                android:textColor="@color/heading_colour_primary"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvEndTimeMusicLight"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

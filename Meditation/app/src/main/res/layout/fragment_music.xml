@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_sleep_bg"
+    android:orientation="vertical"
+    tools:context=".fragment.MusicFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytRelativeTopMusicFragment"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:contentDescription="@string/back_button"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:src="@drawable/btn_back_sleep"
+                android:layout_alignParentStart="true"
+                android:id="@+id/btnBackSleepMusic"
+                android:layout_marginHorizontal="@dimen/_5sdp"/>
+            
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_music"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_20ssp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:textColor="@color/recycler_txt_color"
+                android:id="@+id/tvSleepMusic"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewSleepMusic"
+            android:layout_marginHorizontal="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectProfileImage">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarSelectImg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:title="@string/select_your_img"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/toolbar_back" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLytSelectImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorFullWidth="false"
+        android:layout_below="@+id/toolbarSelectImg"
+        app:tabTextColor="@color/black"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="@dimen/_15sdp"
+        app:tabPaddingStart="@dimen/_15sdp"
+        app:tabGravity="start"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/facebook_btn_bg_color"
+        app:tabSelectedTextColor="@color/black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpSelectImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/tabLytSelectImg"
+        android:textAlignment="viewStart" />
+
+</RelativeLayout>

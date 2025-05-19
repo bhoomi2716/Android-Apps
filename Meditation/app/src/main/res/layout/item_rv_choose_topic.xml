@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/background_image"
+            android:src="@drawable/reduce_stress_img"
+            android:adjustViewBounds="true"
+            android:id="@+id/ivDesignChooseTopic"/>
+
+            <TextView
+                android:id="@+id/tvDesignChooseTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="@string/reduce_anxiety"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:textColor="@color/light_btn_bg_color"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_alignBottom="@id/ivDesignChooseTopic"
+                android:layout_marginHorizontal="@dimen/_11sdp" />
+
+</RelativeLayout>

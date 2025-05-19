@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navHome"
+        android:background="@color/white"
+        android:id="@+id/frameLytHomeActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/navHome">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytHomeNav"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeNav"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center"
+                app:cardElevation="0dp">
+
+
+                <ImageView
+                    android:id="@+id/ivHomeNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="ContentDescription"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/home_icon"
+                    android:src="@drawable/home_nav_home" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_home"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/nav_txt_color"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/tvHomeNav"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytSleepNav"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSleepNav"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivSleepNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="ContentDescription"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/sleep_icon"
+                    android:src="@drawable/sleep_nav_home" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_sleep"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/nav_txt_color"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/tvSleepNav"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytMeditateNav"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMeditateNav"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivMeditateNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/meditate_icon"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/meditate_nav_home"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_meditate"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/nav_txt_color"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/tvMeditateNav"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytMusicNav"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMusicNav"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivMusicNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/music_nav_home"
+                    android:contentDescription="@string/music_icon"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_music"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/nav_txt_color"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/tvMusicNav"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lytProfileNav"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvProfileNav"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:cardCornerRadius="@dimen/_18sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivProfileNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/profile_icon"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_nav_home"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_profile"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/nav_txt_color"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:id="@+id/tvProfileNav"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_sleep_bg"
+    tools:context=".fragment.SleepFragment">
+
+    <ImageView
+        android:id="@+id/ivTopMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:contentDescription="@string/frame_background"
+        android:scaleType="fitStart"
+        android:src="@drawable/sleep_main_top_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:contentDescription="@string/moon_image"
+        android:src="@drawable/moon_sleep_frag"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:id="@+id/ivMoonSleepFrag"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_stories"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_below="@+id/ivMoonSleepFrag"
+            android:textColor="@color/heading_color_sleep_mode"
+            android:id="@+id/tvSleepStoriesHeading"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bedtime_stories_help_into_deep_natural_sleep"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:textColor="@color/sub_heading_primary"
+            android:gravity="center"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_below="@+id/tvSleepStoriesHeading"
+            android:id="@+id/tvLearnMindSubHeading"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTopSleepFragment"
+            android:layout_below="@+id/tvLearnMindSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scrollbars="none" />
+
+        <FrameLayout
+            android:layout_below="@+id/recyclerViewTopSleepFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frmNestedSleepFragment">
+
+        </FrameLayout>
+
+</RelativeLayout>

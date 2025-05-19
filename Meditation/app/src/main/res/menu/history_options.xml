@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/idRename"
+        android:title="@string/rename" />
+
+    <item android:id="@+id/idRemoveFromLike"
+        android:title="@string/remove_from_like"
+        android:icon="@drawable/btn_like_course_details"/>
+
+    <item android:id="@+id/idRemoveFromDownload"
+        android:title="@string/remove_from_download"
+        android:icon="@drawable/btn_cancel_my_meditate"/>
+
+</menu>

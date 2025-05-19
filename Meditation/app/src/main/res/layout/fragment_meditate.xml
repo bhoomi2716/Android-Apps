@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/home_frag_bg"
+    tools:context=".fragment.MeditateFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meditate"
+            android:textSize="@dimen/_25ssp"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:gravity="center"
+            android:textColor="@color/heading_colour_primary"
+            android:id="@+id/tvMeditateHeading"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/learn_mind_doing_acrobatics"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_28sdp"
+            android:textColor="@color/sub_heading_primary"
+            android:gravity="center"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:id="@+id/tvLearnMindSubHeading"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTopMeditateFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:scrollbars="none" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frmNestedMeditate">
+
+        </FrameLayout>
+
+
+</LinearLayout>

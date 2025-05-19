@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:id="@+id/mainLayoutMyFragmentDesign">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/my_fragment_card_bg">
+
+            <TextView
+                android:id="@+id/tvMusicTitleMyFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/focus_attention"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/heading_colour_primary"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/tvMusicMinuteMyFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMusicTitleMyFragment"
+                android:gravity="center_vertical"
+                android:text="@string/two_min_twenty_five_sec"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/sub_heading_primary"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

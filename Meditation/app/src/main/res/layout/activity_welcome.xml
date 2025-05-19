@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeActivity">
+
+    <ImageView
+        android:contentDescription="@string/frame_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tvHeading"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_bg_welcome" />
+
+    <LinearLayout
+        android:id="@+id/lytLinearFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/silent_logo"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/airbnb_cereal_w_bd"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo_desc"
+            android:src="@drawable/brand_logo"
+            android:layout_marginHorizontal="@dimen/_7sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moon_logo"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/airbnb_cereal_w_bd"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_relaxing_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lytLinearFrame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/frame_img_desc"
+        android:src="@drawable/relaxing_person_img_welcome" />
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSubHeading"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/what_we_are_do"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/heading_colour_primary"
+        android:textStyle="bold"
+        android:textSize="@dimen/_22ssp" />
+
+    <TextView
+        android:id="@+id/tvSubHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignUp"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:layout_marginHorizontal="@dimen/_35sdp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/people_using_app"
+        android:textColor="@color/sub_heading_primary"
+        android:textSize="@dimen/_12ssp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lytLinear"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:background="@drawable/btn_bg"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/sign_up"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:stateListAnimator="@null"
+        android:textColor="@color/btn_text"
+        android:textSize="@dimen/_10ssp" />
+
+    <LinearLayout
+        android:id="@+id/lytLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_and_acc"
+            android:textColor="@color/sub_heading_primary"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/login"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/highlights_and_btn_primary"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

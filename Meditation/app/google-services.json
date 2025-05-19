@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "368747751026",
+    "project_id": "meditation-ec442",
+    "storage_bucket": "meditation-ec442.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368747751026:android:6463a8a5f753ecaccfc4eb",
+        "android_client_info": {
+          "package_name": "com.example.meditation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqHKOQ9n5PKFtuepcKg8sqC5-ItntqNL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

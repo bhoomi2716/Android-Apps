@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowLightStatusBar="false"
+    android:background="@drawable/profile_fragment_bg"
+    tools:context=".fragment.ProfileFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/img_profile"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/facebook_btn_bg_color"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUserNameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_25ssp"
+            android:layout_below="@+id/ivProfile"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/username"
+            android:fontFamily="@font/garamond_premier_pro_regular"
+            android:textColor="@color/heading_color_sleep_mode"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEmailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUserNameProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_25ssp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:fontFamily="@font/garamond_premier_pro_regular"
+            android:text="@string/email"
+            android:textColor="@color/heading_color_sleep_mode"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmailProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/google_btn_bg"
+            android:gravity="center"
+            android:textColor="@color/main_sleep_bg"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/helvetica_neue_black"
+            android:textStyle="bold"
+            android:text="@string/log_out" />
+
+        <ImageView
+            android:contentDescription="@string/frame_img_desc"
+            android:id="@+id/ivBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnLogOut"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:src="@drawable/profile_bottom_img" />
+
+</RelativeLayout>

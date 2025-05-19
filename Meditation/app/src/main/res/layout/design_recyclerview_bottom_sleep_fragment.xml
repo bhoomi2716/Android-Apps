@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:background="@color/main_sleep_bg"
+    android:id="@+id/lytLinearDesignHomeFragment"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/_2sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/night_island_img"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/ivDesignSleepFragment"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/helvetica_neue_bold"
+            android:text="@string/night_island"
+            android:textColor="@color/recycler_txt_color"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:id="@+id/tvTitleDesignSleepFragment"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="@string/min_sleep_music"
+            android:textSize="@dimen/_8ssp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/rv_txt_color"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:id="@+id/tvMinSleepFragment"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/home_frag_bg"
+    android:layout_marginHorizontal="@dimen/_7sdp"
+    android:orientation="vertical"
+    android:id="@+id/lytLinearDesignHomeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/focus_home_frag"
+        android:id="@+id/ivDesignHomeFragment"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:text="@string/focus"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColor="@color/heading_colour_primary"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:id="@+id/tvDesignHomeFragment"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meditation_min"
+        android:textSize="@dimen/_9ssp"
+        android:layout_marginTop="-3dp"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textColor="@color/sub_heading_primary"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:id="@+id/tvMinHomeFragment"/>
+
+</LinearLayout>

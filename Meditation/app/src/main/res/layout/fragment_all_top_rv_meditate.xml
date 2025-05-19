@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AllFragmentTopRvMeditate">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/daily_clam_bg"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:id="@+id/lytLinearDailyThought">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/tvDailyThought"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/daily_clam"
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/heading_colour_primary"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/tvMeditation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDailyThought"
+                        android:gravity="center_vertical"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:text="@string/pause_practice"
+                        android:textColor="@color/meditate_daily_clam_sub_heading_colour"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:contentDescription="@string/play_pause_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnPlayDailyThought"
+                    android:src="@drawable/play_icon_daily_clam"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewBottomMeditateFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:scrollbars="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

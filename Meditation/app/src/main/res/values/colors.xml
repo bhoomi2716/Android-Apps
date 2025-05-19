@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="heading_colour_primary">#3F414E</color>
+    <color name="sub_heading_primary">#A1A4B2</color>
+    <color name="highlights_and_btn_primary">#8E97FD</color>
+    <color name="btn_text">#F6F1FB</color>
+    <color name="edt_bg_color">#F2F3F7</color>
+    <color name="card_txt_color">#FEF9F3</color>
+    <color name="light_btn_bg_color">#EBEAEC</color>
+    <color name="facebook_btn_bg_color">#7583CA</color>
+    <color name="heading_color_light">#FFECCC</color>
+    <color name="my_meditate_bg_colour">#FFFAF1</color>
+    <color name="reduce_stress_bg_color">#7583CA</color>
+    <color name="improve_performance">#FA6E5A</color>
+    <color name="increase_happiness">#FEB18F</color>
+    <color name="reduce_anxiety">#FFCF86</color>
+    <color name="personal_growth">#6CB28E</color>
+    <color name="better_sleep">#3F414E</color>
+    <color name="relaxation_music_bg_color">#FFC973</color>
+    <color name="nav_txt_color">#A0A3B1</color>
+    <color name="heading_color_sleep_mode">#E6E7F2</color>
+    <color name="main_sleep_bg">#03174C</color>
+    <color name="rv_txt_color">#98A1BD</color>
+    <color name="heading_color_secondary">#FFE7BF</color>
+    <color name="sub_heading_primary_sleep">#F9F9FF</color>
+    <color name="recycler_txt_color">#E6E7F2</color>
+    <color name="profile_frag_lyt_color">#8C96FF</color>
+    <color name="seekbar_colour">#47557E</color>
+    <color name="home_frag_bg">#F8F8F8</color>
+    <color name="meditate_daily_clam_sub_heading_colour">#5A6175</color>
+    <color name="notification_light_bg">#F2EDE4</color>
+</resources>

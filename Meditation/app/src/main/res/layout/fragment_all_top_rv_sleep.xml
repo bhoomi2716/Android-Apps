@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_sleep_bg"
+    tools:context=".fragment.AllFragmentTopRvSleep">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/ocean_moon_bg"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:id="@+id/lytLinearOceanMoon">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ocean_moon"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_25ssp"
+                        android:fontFamily="@font/garamond_premier_pro_regular"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_57sdp"
+                        android:textColor="@color/heading_color_secondary"
+                        android:id="@+id/tvOceanMoon"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/non_stop_eight_hour_sleep_audio"
+                        android:layout_marginHorizontal="@dimen/_50sdp"
+                        android:textSize="@dimen/_12ssp"
+                        android:lineSpacingExtra="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:fontFamily="@font/helvetica_neue_light"
+                        android:textColor="@color/sub_heading_primary_sleep"
+                        android:id="@+id/tvSleepAudio"/>
+
+                    <ImageView
+                        android:contentDescription="@string/start_button"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_start_light"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/btnStartSleepFragment"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewBottomSleepFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:scrollbars="horizontal" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

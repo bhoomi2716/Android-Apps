@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/welcome_sleep_bg"
+    tools:context=".activity.GetStartedSleepActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60sdp"
+        android:contentDescription="@string/moon_image"
+        android:src="@drawable/moon_wlc_sleep"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:id="@+id/ivMoonWlcSleep"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wlc_sleep"
+        android:textColor="@color/heading_color_sleep_mode"
+        android:textSize="@dimen/_23ssp"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_below="@+id/ivMoonWlcSleep"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:id="@+id/tvWlcHeading"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explore_sleep_uses_sound_create_conditions_refreshing_Sleep"
+        android:textColor="@color/light_btn_bg_color"
+        android:textSize="@dimen/_13ssp"
+        android:lineSpacingExtra="@dimen/_10sdp"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:layout_marginHorizontal="@dimen/_27sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_below="@+id/tvWlcHeading"
+        android:id="@+id/tvSubHeading"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/birds_image"
+        android:src="@drawable/birds_wlc_sleep"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvSubHeading"
+        android:scaleType="fitStart"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_above="@+id/btnGetStartedWelcomeSleep"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:id="@+id/ivBirdsWlcSleep"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStartedWelcomeSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_bg"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/get_start"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textColor="@color/btn_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:textSize="@dimen/_10ssp" />
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/highlights_and_btn_primary"
+    tools:context=".activity.UserWelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/lytLinearTopLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/silent_logo"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/airbnb_cereal_w_bd"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo_desc"
+            android:src="@drawable/brand_logo_welcome_user"
+            android:layout_marginHorizontal="@dimen/_7sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moon_logo"
+            android:fontFamily="@font/airbnb_cereal_w_bd"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lytWelcomeMsg"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_below="@+id/lytLinearTopLogo">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHiMsg"
+            android:text="@string/hi_msg"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/heading_color_light"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_21ssp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUsername"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="@string/user"
+            android:textColor="@color/heading_color_light"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_21ssp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWelcomeMsg"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="@string/welcome_msg"
+            android:layout_gravity="center"
+            android:textColor="@color/heading_color_light"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_21ssp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWelcomeAppMsg"
+        android:layout_marginTop="-5dp"
+        android:text="@string/welcome_app_msg"
+        android:layout_below="@+id/lytWelcomeMsg"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:textColor="@color/heading_color_light"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:textSize="@dimen/_21ssp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSubMsg"
+        android:lineSpacingExtra="@dimen/_7sdp"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:text="@string/explore_app_find_some_peace"
+        android:layout_below="@+id/tvWelcomeAppMsg"
+        android:textColor="@color/heading_color_light"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:contentDescription="@string/frame_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/btnGetStartedUW"
+        android:layout_below="@+id/tvSubMsg"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/highlights_and_btn_primary"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bottom_frame" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStartedUW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/user_welcome_btn_bg"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:text="@string/get_start"
+        android:stateListAnimator="@null"
+        android:textColor="@color/heading_colour_primary"
+        android:textSize="@dimen/_10ssp" />
+
+</RelativeLayout>

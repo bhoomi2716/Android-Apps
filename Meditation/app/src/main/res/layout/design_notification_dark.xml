@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_sleep_bg"
+    android:padding="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:contentDescription="@string/background_image"
+        android:src="@drawable/img_notification_dark"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_centerVertical="true"
+        android:id="@+id/ivNotificationDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivNotificationDark"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/night_island"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/helvetica_neue_black"
+            android:textColor="@color/recycler_txt_color"
+            android:id="@+id/tvTitleNotificationDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_music_play"
+            android:textSize="@dimen/_8ssp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/recycler_txt_color"
+            android:id="@+id/tvSubTopicNotificationDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/_5sdp">
+
+            <ImageView
+                android:contentDescription="@string/previous_music_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/previous_music_dark"
+                android:id="@+id/ivPreviousMusicNotificationDark"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:contentDescription="@string/play_pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/btn_pause_notification_dark"
+                android:id="@+id/ivPlayPauseNotificationDark"
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:contentDescription="@string/next_music_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/next_music_dark"
+                android:id="@+id/ivNextMusicNotificationDark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_5sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_8sdp"-->
+    <!--        android:layout_marginHorizontal="@dimen/_10sdp">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/minute"-->
+    <!--            android:textColor="@color/recycler_txt_color"-->
+    <!--            android:textSize="@dimen/_10ssp"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:fontFamily="@font/helvetica_neue_medium"-->
+    <!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:id="@+id/tvStartTimeMusicNotificationDark"/>-->
+
+    <!--        <SeekBar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+    <!--            android:progressTint="@color/recycler_txt_color"-->
+    <!--            android:thumb="@drawable/seekbar_thumb_dark"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:progress="15"-->
+    <!--            android:layout_toEndOf="@+id/tvStartTimeMusicNotificationDark"-->
+    <!--            android:layout_toStartOf="@+id/tvEndTimeMusicNotificationDark"-->
+    <!--            android:id="@+id/seekbarMusicNotificationLight"/>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/minute"-->
+    <!--            android:textColor="@color/recycler_txt_color"-->
+    <!--            android:textSize="@dimen/_10ssp"-->
+    <!--            android:progressBackgroundTint="@color/seekbar_colour"-->
+    <!--            android:fontFamily="@font/helvetica_neue_medium"-->
+    <!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:id="@+id/tvEndTimeMusicNotificationDark"-->
+    <!--            tools:ignore="RelativeOverlap" />-->
+
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

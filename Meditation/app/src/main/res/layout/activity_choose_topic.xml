@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ChooseTopicActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/frame_background"
+        android:src="@drawable/frame_choose_topic"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/tvWhatBrings"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/ivFrameChooseTopic"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_brings"
+        android:textColor="@color/heading_colour_primary"
+        android:textSize="@dimen/_20ssp"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvWhatBrings"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/heading_colour_primary"
+        android:text="@string/silent_moon"
+        android:layout_below="@+id/tvWhatBrings"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="-7dp"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvMoon"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_topic"
+        android:layout_below="@+id/tvMoon"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/helvetica_neue_light"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textColor="@color/sub_heading_primary"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvChooseTopic"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvChooseTopic"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:id="@+id/rvChooseTopic"/>
+
+</RelativeLayout>

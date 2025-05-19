@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_9sdp"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:contentDescription="@string/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seven_days_clam_img"
+        android:id="@+id/ivRecyclerViewBottom"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seven_days_clam"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:id="@+id/tvRecyclerViewBottom"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_alignBottom="@id/ivRecyclerViewBottom"
+        android:layout_marginHorizontal="@dimen/_11sdp"/>
+
+</RelativeLayout>

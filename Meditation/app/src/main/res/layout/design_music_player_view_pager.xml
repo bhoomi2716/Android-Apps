@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_8sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:id="@+id/mainLayoutViewPagerDesign"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:contentDescription="@string/play_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/_1sdp"
+        android:id="@+id/ivPlayMusicViewPager"
+        android:src="@drawable/music_player_icon"
+        android:layout_gravity="center_vertical"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tvMusicTitleViewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/focus_attention"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/heading_colour_primary"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tvMusicMinuteViewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMusicTitleViewPager"
+            android:gravity="center_vertical"
+            android:text="@string/two_min_twenty_five_sec"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/sub_heading_primary"
+            android:textSize="@dimen/_10ssp" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@string/vertical_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_view_pager"
+        android:id="@+id/lineDesignMusicViewPager"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</LinearLayout>

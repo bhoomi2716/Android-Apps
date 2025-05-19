@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.CourseDetailsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_210sdp"
+                    android:background="@drawable/toolbar_img_course_details"
+                    android:contentDescription="@string/toolbar_image"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_35sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:contentDescription="@string/back_button"
+                        android:src="@drawable/btn_back_course_details"
+                        android:id="@+id/ivBackToolbarCourseDetails"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:contentDescription="@string/like_button"
+                        android:src="@drawable/btn_like_toolbar"
+                        android:layout_toStartOf="@+id/ivDownloadToolbarCourseDetails"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:id="@+id/ivLikeToolbarCourseDetails"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:src="@drawable/btn_download"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/download_button"
+                        android:id="@+id/ivDownloadToolbarCourseDetails"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/happy_day"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:textSize="@dimen/_23ssp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/heading_colour_primary"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:id="@+id/tvHappyDay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/sub_heading_primary"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:id="@+id/tvCourse"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mind_into_restful_with_ambient_tones"
+                android:textSize="@dimen/_12ssp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:fontFamily="@font/helvetica_neue_light"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/sub_heading_primary"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:id="@+id/tvEasyMindRest"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/like_button"
+                        android:src="@drawable/btn_like_course_details"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivLikeCourseDetails"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favorites"
+                        android:layout_toEndOf="@+id/ivLikeCourseDetails"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sub_heading_primary"
+                        android:id="@+id/tvFavouriteNumber"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/head_phone_image"
+                        android:src="@drawable/btn_headphn_course_details"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivHeadPhnCourseDetails"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/listening_number"
+                        android:layout_toEndOf="@+id/ivHeadPhnCourseDetails"
+                        android:textColor="@color/sub_heading_primary"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvHeadPhnNumber"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_narrator"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:textColor="@color/heading_colour_primary"
+                android:id="@+id/tvPickNum"
+                android:textSize="@dimen/_18ssp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLytCourseDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="false"
+                app:tabTextColor="@color/sub_heading_primary"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="@dimen/_30sdp"
+                app:tabPaddingStart="@dimen/_15sdp"
+                app:tabGravity="start"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/highlights_and_btn_primary"
+                app:tabSelectedTextColor="@color/highlights_and_btn_primary" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerCourseDetails"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:textAlignment="viewStart"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</RelativeLayout>
