@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoPlayerAppDemo</string>
+    <string name="loading_videos">Loading videos...</string>
+    <string name="folder_name">Folder Name</string>
+    <string name="_0_mb">0 MB</string>
+    <string name="enter_new_name">Enter new name</string>
+</resources>
